@@ -367,7 +367,6 @@ background-position: center;
 }
 
 #eventos .imagenes{
-    border: 1px solid white;
     max-width: 42rem;
     margin: auto;
     display: flex;
