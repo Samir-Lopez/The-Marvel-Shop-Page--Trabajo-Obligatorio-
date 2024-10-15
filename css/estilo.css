@@ -501,7 +501,8 @@ background-position: center;
     padding: 20px 100px;
 }
 
-#pie .legacy, .legacy a{
+#pie .legacy, 
+#pie .legacy a{
     width: 430px;
     color: white;
 }
@@ -850,9 +851,6 @@ background-position: center;
 }
 /*---Fin Contacto---*/
 
-
-
-
 /*---Keyframes---*/
 
 @keyframes palabras{
@@ -879,25 +877,7 @@ background-position: center;
         --angle: 360deg;
     }
 }
-
 /*---Fin Keyframes---*/
 
 /*---Media---*/
 /*---Fin Media---*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
