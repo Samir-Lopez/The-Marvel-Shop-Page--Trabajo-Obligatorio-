@@ -1,0 +1,903 @@
+/*Estilos para todas las etiquetas*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&family=Sixtyfour+Convergence&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+.contenido{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 0px 4px 2px white;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+.texto{
+    font-family: "Merienda", "Poppins", sans-serif;
+}
+
+.texto h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.texto p{
+    padding: 10px 5px 20px;
+    text-align: justify;
+}
+
+/*---Cabecera---*/
+#cabecera-index{
+    background-image: linear-gradient( rgba(0,0,0,1), rgb(62, 27, 71, 0.25)), url(../imagenes/fondo-venom.jpg);
+    box-shadow: 0px 0px 15px 20px rgba(137, 43, 226, 0.5);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#cabecera-productos{
+    background-image: linear-gradient( rgba(0,0,0,1), rgba(71, 27, 27, 0.25)), url(../imagenes/ironman.png);
+    box-shadow: 0px 0px 15px 20px rgba(139, 0, 0, 0.5);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#cabecera-presupuestos{
+    background-image: linear-gradient( rgba(0,0,0,1), rgba(112, 112, 112, 0.034)), url(../imagenes/capitan-america.jpg);
+    box-shadow: 0px 0px 15px 20px rgba(128, 128, 128, 0.5);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#cabecera-contacto{
+    background-image: linear-gradient( rgba(0,0,0,1), rgba(255, 51, 0, 0)), url(../imagenes/wolv-dead.jpg);
+    box-shadow: 0px 0px 15px 20px rgba(255, 68, 0, 0.5);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.cabecera{
+background-size: cover;
+background-position: center;
+}
+
+.mitad{
+    min-height: 50vh;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.navegador .logo:hover{
+    transform: scale(1.1);
+}
+
+.brand{
+    padding-right: 0;    
+}
+
+.nombre{
+    width: 150px;
+}
+
+.navegador ul{
+    margin: auto;
+    flex: 1;
+    text-align: right;
+}
+
+.navegador ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navegador ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.navegador ul li:hover::after{
+    width: 100%;
+}
+
+#cabecera-index ul li::after{
+    background-color: blueviolet;
+}
+
+#cabecera-productos ul li::after{
+    background-color: darkred;
+}
+
+#cabecera-presupuestos ul li::after{
+    background-color: grey;
+}
+
+#cabecera-contacto ul li::after{
+    background-color: orangered;
+}
+
+#cabecera-index .activar{
+    box-shadow: 0px 0px 10px 3px blueviolet;
+}
+
+#cabecera-productos .activar{
+    box-shadow: 0px 0px 10px 3px darkred;
+}
+
+#cabecera-presupuestos .activar{
+    box-shadow: 0px 0px 10px 3px grey;
+}
+
+#cabecera-contacto .activar{
+    box-shadow: 0px 0px 10px 3px orangered;
+}
+
+.navegador ul li a{
+    font-size: 12px;
+    font-family: "Sixtyfour Convergence";
+    padding: 20px 10px 20px 10px;
+}
+
+/*---Titulo Cabecera Pagina Index---*/
+#cabecera-index .bienvenida h1{
+    color: white;
+    margin-top: 10%;
+    font-size: 50px;
+}
+
+/*---Titulo Cabecera de las Demas Paginas---*/
+.titulo{
+    color: white;
+    margin-top: 4%;
+    font-size: 50px;
+}
+
+#cabecera-index .bienvenida{
+    display: block;
+}
+
+#cabecera-index .bienvenida h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10%;
+}
+
+
+#cabecera-index .bienvenida h2 span::after{
+    content: '';
+    color: blueviolet;
+    animation: palabras 10s infinite;
+}
+
+#cabecera-index .btn{
+    color: blueviolet;
+    font-weight: 700;
+}
+
+#cabecera-index .btn:hover{
+    background-color: rgba(105, 22, 131, 0.685);
+    color: white;
+}
+
+.inicio a{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    width: 95px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px 3px white;
+    transition: 1s ease;
+    z-index: 1;
+}
+
+.inicio a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/*---Fin Cabecera---*/
+
+/*---Primera sección---*/
+#novedades{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#novedades .contenido{
+    background-image: linear-gradient(to top,rgba(27, 53, 17, 0.349), rgba(0, 0, 0, 0.507)), url(../imagenes/hulk-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: fit-content;
+    width: 85%;
+    margin: 5rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 4px green;
+
+}
+
+#novedades .contenido h2{
+    color: rgb(19, 233, 37);
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#novedades .news{
+    margin: 2%;
+    display: inline-block;
+    height: 530px;
+    width: 350px;
+    transition: .5s;
+    box-shadow: 0px 7px 2ch 0px rgb(12, 255, 4);
+    border-radius:  20px;
+    overflow: hidden;
+}
+
+#novedades .news:hover{
+    transform: scale(1.02);
+}
+
+#novedades .superior{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#novedades .novedad1{
+    background-image: url(../imagenes/stan_lee.png);
+
+}
+
+#novedades .novedad2{
+    background-image: url(../imagenes/time-line.png);
+
+}
+
+#novedades .novedad3 iframe{
+    border-top-left-radius: 30px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+#novedades .inferior{
+    height: 50%;
+    padding: 20px;
+    overflow-y: scroll;
+    margin: 0%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    border-bottom-left-radius: 30px;
+}
+
+#novedades .inferior::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+#novedades .inferior::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 100vh;
+}
+
+#novedades .inferior::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius: 100vh;
+}
+
+#novedades .texto{
+    color: rgb(19, 233, 37);
+}
+
+
+#novedades .btn{
+    color: rgb(19, 233, 37);
+    font-weight: 700;
+}
+
+#novedades .btn:hover{
+    background-color: rgba(51, 163, 47, 0.685);
+    color: white;
+}
+/*---Fin Primera sección---*/
+
+/*---Segunda sección---*/
+#eventos{
+    background-image: linear-gradient(to top,rgba(0, 0, 0), rgba(0, 0, 0, 0)), url(../imagenes/caballero-luna2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#eventos .contenido h2{
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#eventos .posicion{
+    display: flex;
+    padding: 2px;
+}
+
+#eventos .sl{
+    margin: auto;
+    position: relative;
+}
+
+#eventos .imagenes{
+    border: 1px solid white;
+    max-width: 42rem;
+    margin: auto;
+    display: flex;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+/*---Property "--angle"---*/
+@property --angle{
+    syntax: "<angle>";/*---El syntax de la variable "--angle" solo aceptara valores de "deg"---*/
+    initial-value: 0deg;/*---Valor inicial "0deg"---*/
+    inherits: false;/*---Ajuste predeterminado en "True" le damos valor "False" para funcionamiento de nuestro property personalizado---*/
+}
+
+.angle::after, .angle::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 3px;
+    border-radius: 20px;
+    background-image: conic-gradient(from var(--angle), transparent 70%, white);
+    z-index: 1;
+    animation: 6s spin linear infinite;
+}
+
+.angle::before{
+    filter: blur(20px);
+}
+
+#eventos .imagenes img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    z-index: 2;
+}
+
+#eventos .sliders{
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 30px;
+    z-index: 3;
+}
+
+#eventos .sliders a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 1px white;
+    background-color: transparent;
+}
+
+#eventos .sliders a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+#eventos .texto{
+    margin: 3% auto;
+    min-height: 50vh;
+    width: 42rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 4px white;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+}
+
+#eventos .event{
+    color: white;
+    font-weight: 700;
+}
+
+#eventos .event:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+/*---Fin Segunda sección---*/
+
+/*---Tercera sección---*/
+
+#sobrenosotros .contenido{
+    color: rgb(247, 3, 3);
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(../imagenes/fondo-spiderman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#sobrenosotros .contenido h2{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#sobrenosotros .texto{
+    margin: 3% auto;
+    min-height: 50vh;
+    width: 50%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 4px red;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+/*---Fin Tercera sección---*/
+
+/*---Pie de Página---*/
+#pie{
+    background-color: black;
+}
+
+#pie .contenido{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#pie .legacy{
+    height: 100%;
+    text-align: left;
+    padding: 20px 100px;
+}
+
+#pie .legacy, .legacy a{
+    width: 430px;
+    color: white;
+}
+
+#pie .legacy a:hover{
+    text-decoration: underline;
+}
+
+#pie .media-icons{
+    padding: 40px 0;
+    height: 100%;
+    width: 700px;
+    box-shadow: 0px 0px 4px 3px darkred;
+}
+
+#pie .media-icons a{
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid darkred;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    color: darkred;
+    font-size: 20px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#pie .media-icons a:hover{
+    background-color: darkred;
+    color: black;
+    transform: scale(1.1);
+}
+
+#pie .firma{
+    height: 100%;
+    width: 450px;
+    color: white;
+    font-family: "Qwitcher Grypen";
+}
+/*---Fin Pie de Página---*/
+
+
+/*---Productos---*/
+#productos .contenido{
+    background-color: black;
+    position: relative;
+    padding: 50px;
+}
+
+#productos .display{
+    display: flex;
+    justify-content: space-between;
+}
+
+#productos .texto{
+    padding: 20px;
+    color: white;
+}
+
+#productos .texto h2{
+    font-size: 35px;
+    margin: 20px;
+}
+
+#productos .texto h3{
+    font-size: 1.05rem;
+    margin: auto;
+    text-transform: uppercase;
+    
+}
+
+#productos .angle{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#productos .item{
+    background-color: rgb(61, 61, 61);
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#productos .item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#productos .product-img{
+    height: 75%;
+    width: 100%;
+}
+
+#productos .product-img img{
+    height: 100%;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+#productos .texto{
+    height: 25%;
+    width: 100%;
+}
+
+
+#productos .angle::after, 
+#productos .angle::before{
+    background-image: conic-gradient(from var(--angle), black, red);
+    padding: 0;
+    z-index: -1;
+}
+#productos .angle:hover::after, 
+#productos .angle:hover::before{
+    padding: 6.5px;
+    z-index: 0;
+}
+/*---Fin Productos---*/
+
+/*---Presupuestos---*/
+#presupuestos{
+    background-color: black;
+    padding: 10px;
+}
+
+#presupuestos h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+#presupuestos .contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#presupuestos .texto{
+    font-weight: 900;
+}
+
+#presupuestos .caja{
+    height: 65vh;
+    width: 65vh;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px 3px white;
+    overflow: hidden;
+}
+
+#presupuestos .brand{
+    height: 100%;
+    width: 25%;
+    position: relative;
+    box-shadow: 0px 0px 4px 3px rgba(255, 255, 255, 0.178);
+}
+
+#presupuestos .brand img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+#presupuestos .nombre{
+    transform: rotate(270deg);
+}
+
+#presupuestos .datos{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#presupuestos .efecto{
+    position: relative;
+}
+
+#presupuestos input, 
+#presupuestos textarea, 
+#presupuestos button{
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 0.7rem;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 1rem;
+    color: white;
+    outline: none;
+    z-index: 2;
+    transition: 0.5s ease;
+}
+
+#presupuestos .telefono{
+    margin-bottom: 0;
+}
+
+#presupuestos .placeholder{
+    position: absolute;
+    background-color: black;
+    width: 210px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+#presupuestos input:valid,
+#presupuestos textarea:valid{
+    border: 3px solid greenyellow;
+}
+
+#presupuestos input:invalid:not(:placeholder-shown),
+#presupuestos textarea:invalid:not(:placeholder-shown){
+    border: 3px solid red;
+}
+
+#presupuestos input:focus + .placeholder,
+#presupuestos input:valid + .placeholder,
+#presupuestos input:invalid:not(:placeholder-shown) + .placeholder{
+    transform: translate(-3rem, -1.5rem) scale(0.7);
+    z-index: 2;
+}
+
+#presupuestos textarea:focus + .placeholder,
+#presupuestos textarea:valid + .placeholder{
+    transform: translate(-3rem, -4.4rem) scale(0.7);
+    z-index: 2;
+}
+
+#presupuestos input:valid + .placeholder,
+#presupuestos textarea:valid + .placeholder{
+    color: black;
+    background-color: greenyellow;
+}
+
+#presupuestos input:invalid:not(:placeholder-shown) + .placeholder,
+#presupuestos textarea:invalid:not(:placeholder-shown) + .placeholder{
+    color: black;
+    background-color: red;
+}
+#presupuestos input:invalid:not(:placeholder-shown) ~ p{
+    color: red;
+}
+
+#presupuestos input[type="checkbox"]{
+    width: fit-content;
+    cursor: pointer;
+}
+
+#presupuestos p{
+    font-size: small;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#presupuestos label{
+    display: block;
+    color: white;
+}
+
+#presupuestos .politica{
+    font-size: 1rem;
+}
+
+#presupuestos .politica a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#presupuestos .datos label::after{
+    content: ' *';
+    font-size: 1.2rem;
+}
+
+#presupuestos .submit{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+}
+
+#presupuestos .submit:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+/*---Fin Presupuestos---*/
+
+/*---Contacto---*/
+#contacto .contenido{
+    background-color: black;
+    min-height: 65vh;
+    display: block;
+    padding: 20px;
+}
+
+#contacto .location{
+    height: 50%;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#contacto .location iframe{
+    border-radius: 10px;
+    width: 100%;
+}
+
+#contacto .contacto{
+    height: 50%;
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacto .texto{
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 4px 3px white;
+    height: 150px;
+    width: fit-content;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#contacto .contact-icon{
+    margin-right: 20px;
+}
+/*---Fin Contacto---*/
+
+
+
+
+/*---Keyframes---*/
+
+@keyframes palabras{
+    0%, 25%{
+        content: 'COMICS';
+    }
+    26%, 50%{
+        content: 'CAMISETAS';
+    }
+    51%, 75%{
+        content: 'TAZAS';
+    }
+    76%, 100%{
+        content: 'POSTERS';
+    }
+    
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+/*---Fin Keyframes---*/
+
+/*---Media---*/
+/*---Fin Media---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
