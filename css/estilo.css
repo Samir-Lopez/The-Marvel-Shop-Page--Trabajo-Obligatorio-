@@ -396,7 +396,7 @@ background-position: center;
     border-radius: 20px;
     background-image: conic-gradient(from var(--angle), transparent 70%, white);
     z-index: 1;
-    animation: 6s spin linear infinite;
+    animation: spin 6s linear infinite;
 }
 
 .angle::before{
