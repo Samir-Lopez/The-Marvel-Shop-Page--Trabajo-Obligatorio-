@@ -114,6 +114,7 @@ background-position: center;
 
 .logo{
     width: 100px;
+    height: 110px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.5s ease;
@@ -129,6 +130,7 @@ background-position: center;
 
 .nombre{
     width: 150px;
+    height: 80px;
 }
 
 .navegador ul{
@@ -201,7 +203,7 @@ background-position: center;
     font-size: 50px;
 }
 
-/* Titulo Cabecera de las Demas Paginas */
+/* Titulo Cabecera de las demás páginas */
 .titulo{
     color: white;
     margin-top: 4%;
@@ -427,6 +429,8 @@ background-position: center;
 }
 
 #eventos .imagenes img{
+    width: 100%;
+    height: 100%;
     flex: 1 0 100%;
     scroll-snap-align: start;
     z-index: 2;
@@ -626,7 +630,8 @@ background-position: center;
 
 #productos .product-img img{
     height: 100%;
-    border-radius: 20%;
+    width: 65%;
+    border-radius: 30px;
     padding: 10px;
 }
 
@@ -731,10 +736,11 @@ background-position: center;
 #presupuestos .placeholder{
     position: absolute;
     background-color: black;
-    width: 210px;
+    width: 215px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 1px;
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.5);
     z-index: 1;

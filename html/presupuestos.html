@@ -1,115 +1,115 @@
 <!--Inicio Pagina Presupuestos-->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño Web</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
-    <!--Cabecera Presupuestos-->
-    <header id="cabecera-presupuestos" class="cabecera">
-        <div class="contenido mitad">
-            <!--Nombre empresa-->
-            <div class="brand">
-                <img class="nombre" src="../imagenes/nombre.png" alt="Nombre Empresa">
-            </div>
-            <!--Navegador-->
-            <nav class="navegador">
-                <!--Logo-->
-                <div>
-                    <a href="../index.html"><img class="logo" src="../imagenes/logo-capi.png" alt="Logo"></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Presupuestos</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <!--Cabecera Presupuestos-->
+        <header id="cabecera-presupuestos" class="cabecera">
+            <div class="contenido mitad">
+                <!--Nombre empresa-->
+                <div class="brand">
+                    <img class="nombre" src="../imagenes/nombre.png" height="200px" width="300px" alt="Nombre Empresa">
                 </div>
-                <!--Links-->
+                <!--Navegador-->
+                <nav class="navegador">
+                    <!--Logo-->
+                    <div>
+                        <a href="../index.html"><img class="logo" src="../imagenes/logo-capi.png" height="300px" width="200px" alt="Logo"></a>
+                    </div>
+                    <!--Links-->
+                    <div>
+                        <ul> 
+                            <li><a href="../index.html">INICIO</a></li>
+                            <li><a href="productos.html">PRODUCTOS</a></li>
+                            <li class="activar"><a href="presupuestos.html">PRESUPUESTOS</a></li>
+                            <li><a href="contacto.html">CONTACTO</a></li>     
+                        </ul>
+                    </div>
+                </nav>
+                <!--Titulo Presupuestos-->
                 <div>
-                    <ul> 
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="productos.html">PRODUCTOS</a></li>
-                        <li class="activar"><a href="presupuestos.html">PRESUPUESTOS</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>     
-                    </ul>
+                    <h1 class="titulo">PRESUPUESTOS</h1>
                 </div>
-            </nav>
-            <!--Titulo Presupuestos-->
-            <div>
-                <h1 class="titulo">PRESUPUESTOS</h1>
             </div>
-        </div>
-    </header>
-    <!--Fin Cabecera Presupuestos-->
+        </header>
+        <!--Fin Cabecera Presupuestos-->
 
 
-    <main>
-        <!--Sección Presupuestos-->
-        <section id="presupuestos">
-            <h2>FORMULARIO</h2>
+        <main>
+            <!--Sección Presupuestos-->
+            <section id="presupuestos">
+                <h2>FORMULARIO</h2>
+                <div class="contenido">
+                    <div class="caja">
+                        <!--Nombre Empresa-->
+                        <div class="brand">
+                            <img class="nombre" src="../imagenes/nombre.png" height="200px" width="300px" alt="Nombre Empresa">
+                        </div>
+                        <!--Formulario-->
+                        <div class="datos">
+                            <form action="presupuestos.html">
+                                <!--Nombre-->
+                                <div class="efecto">
+                                    <input type="text" name="nombre" placeholder="" pattern="[a-zA-ZñÑ]+" required>
+                                    <div class="placeholder texto">Introduzca su nombre</div>
+                                </div>
+                                <!--E-mail-->
+                                <div class="efecto">
+                                    <input type="email" name="correo" placeholder="" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                                    <div class="placeholder texto">Introduzca su E-mail</div>
+                                </div>
+                                <!--Teléfono-->
+                                <div class="efecto">
+                                    <input class="telefono" type="tel" name="telefono" placeholder="" pattern="[0-9]{9}" required>
+                                    <div class="placeholder texto">Introduzca su teléfono</div>
+                                    <p>Introduzca un mínimo de 9 números</p>
+                                </div>
+                                <!--Solicite más información-->
+                                <div class="efecto">
+                                    <textarea name="informacion" cols="30" rows="5" maxlength="80" placeholder="" required></textarea>
+                                    <div class="placeholder texto">Solicite más información</div>
+                                </div>
+                                <!--Política de privacidad-->
+                                <label class="texto politica" for="politica_de_privacidad"><input type="checkbox" id="politica_de_privacidad" value="politica de privacidad" required>Acepto la <a href="#">Política de privacidad</a></label>
+                                <!--Botón "Enviar"-->
+                                <button class="texto submit" type="submit">ENVIAR</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <!--Fin Sección Presupuestos-->
+        </main>
+
+        <!--Pie de Página-->
+        <footer id="pie">
             <div class="contenido">
-                <div class="caja">
-                    <!--Nombre Empresa-->
-                    <div class="brand">
-                        <img class="nombre" src="../imagenes/nombre.png" alt="">
-                    </div>
-                    <!--Formulario-->
-                    <div class="datos">
-                        <form action="presupuestos.html">
-                            <!--Nombre-->
-                            <div class="efecto">
-                                <input type="text" name="nombre" placeholder="" required>
-                                <div class="placeholder texto">Introduzca su nombre</div>
-                            </div>
-                            <!--E-mail-->
-                            <div class="efecto">
-                                <input type="email" name="apellidos" placeholder="" required>
-                                <div class="placeholder texto">Introduzca su E-mail</div>
-                            </div>
-                            <!--Teléfono-->
-                            <div class="efecto">
-                                <input class="telefono" type="tel" minlength="9" name="telefono" placeholder="" required>
-                                <div class="placeholder texto">Introduzca su teléfono</div>
-                                <p>Introduzca un mínimo de 9 números</p>
-                            </div>
-                            <!--Solicite más información-->
-                            <div class="efecto">
-                                <textarea name="informacion" cols="30" rows="5" maxlength="80" placeholder="" required></textarea>
-                                <div class="placeholder texto">Solicite más información</div>
-                            </div>
-                            <!--Política de privacidad-->
-                            <label class="texto politica" for="politica_de_privacidad"><input type="checkbox" id="politica_de_privacidad" value="politica de privacidad" required>Acepto la <a href="#">Política de privacidad</a></label>
-                            <!--Botón "Enviar"-->
-                            <button class="texto submit" type="submit">ENVIAR</button>
-                        </form>
-                    </div>
+                <!--Aviso legal y dirección-->
+                <div class="legacy">
+                    <a href="">AVISO LEGAL</a>
+                    <h4>C. Martínez Maldonado, Distrito Centro, 29007 Málaga</h4>
                 </div>
-            </div> 
-        </section>
-        <!--Fin Sección Presupuestos-->
-    </main>
-    
-    <!--Pie de Página-->
-    <footer id="pie">
-        <div class="contenido">
-            <!--Aviso legal y dirección-->
-            <div class="legacy">
-                <a href="">AVISO LEGAL</a>
-                <h4>C. Martínez Maldonado, Distrito Centro, 29007 Málaga</h4>
+                <!--Iconos Redes Sociales-->
+                <div class="media-icons">
+                    <a href="https://es.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/?lang=es"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+                <!--Firma-->
+                <div class="firma">
+                    <h1>Samir Lopez</h1>
+                </div>
             </div>
-            <!--Iconos Redes Sociales-->
-            <div class="media-icons">
-                <a href="https://es.linkedin.com"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/?lang=es"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-            </div>
-            <!--Firma-->
-            <div class="firma">
-                <h1>Samir Lopez</h1>
-            </div>
-        </div>
-    </footer>
-    <!--Fin Pie de Página-->
+        </footer>
+        <!--Fin Pie de Página-->
 
-</body>
+    </body>
 </html>
 <!--Fin Pagina Presupuestos-->
