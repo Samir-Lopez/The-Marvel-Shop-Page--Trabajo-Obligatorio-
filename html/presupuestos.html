@@ -41,51 +41,52 @@
     <!--Fin Cabecera Presupuestos-->
 
 
-
-    <!--Sección Presupuestos-->
-    <section id="presupuestos">
-        <h2>FORMULARIO</h2>
-        <div class="contenido">
-            <div class="caja">
-                <!--Nombre Empresa-->
-                <div class="brand">
-                    <img class="nombre" src="../imagenes/nombre.png" alt="">
+    <main>
+        <!--Sección Presupuestos-->
+        <section id="presupuestos">
+            <h2>FORMULARIO</h2>
+            <div class="contenido">
+                <div class="caja">
+                    <!--Nombre Empresa-->
+                    <div class="brand">
+                        <img class="nombre" src="../imagenes/nombre.png" alt="">
+                    </div>
+                    <!--Formulario-->
+                    <div class="datos">
+                        <form action="presupuestos.html">
+                            <!--Nombre-->
+                            <div class="efecto">
+                                <input type="text" name="nombre" placeholder="" required>
+                                <div class="placeholder texto">Introduzca su nombre</div>
+                            </div>
+                            <!--E-mail-->
+                            <div class="efecto">
+                                <input type="email" name="apellidos" placeholder="" required>
+                                <div class="placeholder texto">Introduzca su E-mail</div>
+                            </div>
+                            <!--Teléfono-->
+                            <div class="efecto">
+                                <input class="telefono" type="tel" minlength="9" name="telefono" placeholder="" required>
+                                <div class="placeholder texto">Introduzca su teléfono</div>
+                                <p>Introduzca un mínimo de 9 números</p>
+                            </div>
+                            <!--Solicite más información-->
+                            <div class="efecto">
+                                <textarea name="informacion" cols="30" rows="5" maxlength="80" placeholder="" required></textarea>
+                                <div class="placeholder texto">Solicite más información</div>
+                            </div>
+                            <!--Política de privacidad-->
+                            <label class="texto politica" for="politica_de_privacidad"><input type="checkbox" id="politica_de_privacidad" value="politica de privacidad" required>Acepto la <a href="#">Política de privacidad</a></label>
+                            <!--Botón "Enviar"-->
+                            <button class="texto submit" type="submit">ENVIAR</button>
+                        </form>
+                    </div>
                 </div>
-                <!--Formulario-->
-                <div class="datos">
-                    <form action="presupuestos.html">
-                        <!--Nombre-->
-                        <div class="efecto">
-                            <input type="text" name="nombre" placeholder="" required>
-                            <div class="placeholder texto">Introduzca su nombre</div>
-                        </div>
-                        <!--E-mail-->
-                        <div class="efecto">
-                            <input type="email" name="apellidos" placeholder="" required>
-                            <div class="placeholder texto">Introduzca su E-mail</div>
-                        </div>
-                        <!--Teléfono-->
-                        <div class="efecto">
-                            <input class="telefono" type="tel" minlength="9" name="telefono" placeholder="" required>
-                            <div class="placeholder texto">Introduzca su teléfono</div>
-                            <p>Introduzca un mínimo de 9 números</p>
-                        </div>
-                        <!--Solicite más información-->
-                        <div class="efecto">
-                            <textarea name="informacion" cols="30" rows="5" maxlength="80" placeholder="" required></textarea>
-                            <div class="placeholder texto">Solicite más información</div>
-                        </div>
-                        <!--Política de privacidad-->
-                        <label class="texto politica" for="politica_de_privacidad"><input type="checkbox" id="politica_de_privacidad" value="politica de privacidad" required>Acepto la <a href="#">Política de privacidad</a></label>
-                        <!--Botón "Enviar"-->
-                        <button class="texto submit" type="submit">ENVIAR</button>
-                    </form>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <!--Fin Sección Presupuestos-->
-
+            </div> 
+        </section>
+        <!--Fin Sección Presupuestos-->
+    </main>
+    
     <!--Pie de Página-->
     <footer id="pie">
         <div class="contenido">
