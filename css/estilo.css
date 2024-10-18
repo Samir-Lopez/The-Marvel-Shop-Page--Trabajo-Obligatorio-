@@ -33,7 +33,7 @@ footer{
 
 .contenido{
     width: 100%;
-    min-height: 100vh;
+    min-height: 1000px;
     text-align: center;
 }
 
@@ -461,7 +461,7 @@ background-position: center;
 
 #eventos .texto{
     margin: 3% auto;
-    min-height: 50vh;
+    min-height: 500px;
     width: 42rem;
     border-radius: 50px;
     box-shadow: 0px 0px 4px 4px white;
@@ -498,7 +498,7 @@ background-position: center;
 
 #sobrenosotros .texto{
     margin: 3% auto;
-    min-height: 50vh;
+    min-height: 500px;
     width: 50%;
     border-radius: 50px;
     box-shadow: 0px 0px 4px 4px red;
@@ -513,7 +513,7 @@ background-position: center;
 }
 
 #pie .contenido{
-    min-height: 10vh;
+    min-height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -687,7 +687,7 @@ background-position: center;
 }
 
 #presupuestos .brand{
-    height: 608px;
+    height: 100%;
     width: 25%;
     position: relative;
     box-shadow: 0px 0px 4px 3px rgba(255, 255, 255, 0.178);
@@ -698,9 +698,11 @@ background-position: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(270deg);
+    width: 100%;
+    height: 100px;
 }
 #presupuestos .datos{
-    height: 608px;
+    height: 100%;
     width: 75%;
     display: flex;
     justify-content: center;
@@ -717,7 +719,7 @@ background-position: center;
     position: relative;
     text-align: center;
     background-color: transparent;
-    width: 300px;
+    width: 75%;
     border: 1px solid white;
     border-radius: 0.7rem;
     font-size: 1.2rem;
