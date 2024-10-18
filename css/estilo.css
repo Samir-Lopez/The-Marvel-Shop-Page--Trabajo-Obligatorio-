@@ -678,7 +678,7 @@ background-position: center;
 }
 
 #presupuestos .caja{
-    height: 65vh;
+    height: 610px;
     width: 65vh;
     display: flex;
     border-radius: 30px;
@@ -687,7 +687,7 @@ background-position: center;
 }
 
 #presupuestos .brand{
-    height: 100%;
+    height: 608px;
     width: 25%;
     position: relative;
     box-shadow: 0px 0px 4px 3px rgba(255, 255, 255, 0.178);
@@ -700,7 +700,7 @@ background-position: center;
     transform: translate(-50%, -50%) rotate(270deg);
 }
 #presupuestos .datos{
-    height: 100%;
+    height: 608px;
     width: 75%;
     display: flex;
     justify-content: center;
